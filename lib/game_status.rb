@@ -31,3 +31,9 @@ def won?(board)
   end
   return false
 end
+
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+def full?(board)
+  board.reject {|index| index == " "}
+end

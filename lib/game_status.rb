@@ -39,5 +39,5 @@ def full?(board)
 end
 
 def draw?(board)
-  board.include?(won(board) || position_taken?(board, index))
+  board.include?(won?(board) || position_taken?(board, index))
 end

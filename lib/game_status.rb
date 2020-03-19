@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-  WIN_COMBINATIONS.select |win_index| do
+  WIN_COMBINATIONS.select do |win_index|
     WIN_COMBINATIONS.any?{|win_index| win_index == board.to_a}
   end
 end

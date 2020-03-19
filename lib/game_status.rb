@@ -35,5 +35,5 @@ end
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 def full?(board)
-  board.reject {|index| index == " "}
+  board.none?{|index| index == " "}
 end

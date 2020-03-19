@@ -63,4 +63,11 @@ def over?(board)
 end
 
 def winner(board)
+  if won?(board) == "X"
+    return "X"
+  elsif won?(board) == "O"
+    return "O"
+  else !won?(board)
+    return nil
+  end
 end

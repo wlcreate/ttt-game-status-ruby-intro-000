@@ -37,3 +37,7 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 def full?(board)
   board.none?{|index| index == " "}
 end
+
+def draw?(board)
+  board.include?(WIN_COMBINATIONS)
+end

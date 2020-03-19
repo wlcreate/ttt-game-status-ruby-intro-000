@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.select do |win_index|
-    WIN_COMBINATIONS.any?{|win_index| win_index == true}
+  if WIN_COMBINATIONS.any?{|win_index| win_index == true}
+    puts WIN_COMBINATIONS.select {|win_index| win_index == true}
   end
 end
